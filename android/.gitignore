@@ -1,0 +1,11 @@
+# ---> Android
+*.apk
+*.aab
+local.properties
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+# ---> Template placeholders (never commit a generated app with these unreplaced)
+# com.goqw.dentalclinic যোগী https://mdirfanahmedrabbe-design.github.io/goqw-dental-clinic/
