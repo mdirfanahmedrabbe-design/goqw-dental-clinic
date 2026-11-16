@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>যোগী</title>
+<!-- default-accent: #0284c7 -->
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#7c3aed;--dark:#0c4a6e;--light:#f0f9ff;--sky:#e0f2fe;--ink:#0c4a6e;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Hind Siliguri",sans-serif;color:#44403c;background:#fff;line-height:1.6;}
+img{width:100%;display:block;}
+.wrap{max-width:1000px;margin:auto;padding:0 20px;}
+.topbar{background:var(--dark);color:#bae6fd;text-align:center;font-size:13px;font-weight:600;padding:8px 16px;}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #bae6fd;box-shadow:0 2px 12px rgba(0,0,0,.05);}
+.nav-in{max-width:1000px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;}
+.logo{font-weight:800;font-size:21px;color:var(--ink);}
+.logo span{color:var(--accent);}
+.nav-links{display:none;gap:18px;font-size:14px;}
+.nav-links a{color:#57534e;text-decoration:none;}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 28px;border-radius:30px;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(2,132,199,.3);}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid #bae6fd;box-shadow:none;}
+.hero{position:relative;}
+.hero img{height:460px;object-fit:cover;}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,74,110,.93) 0%,rgba(12,74,110,.55) 60%,rgba(12,74,110,.2) 100%);display:flex;align-items:center;}
+.hero-txt{max-width:1000px;margin:auto;padding:40px 20px;width:100%;}
+.pill{display:inline-block;background:rgba(186,230,253,.2);border:1px solid rgba(186,230,253,.6);color:#e0f2fe;font-size:13px;font-weight:700;padding:6px 14px;border-radius:30px;}
+.hero h1{font-size:34px;line-height:1.25;margin:14px 0 10px;color:#fff;max-width:560px;}
+.hero h1 em{color:#7dd3fc;font-style:normal;}
+.hero p{color:#e0f2fe;max-width:520px;}
+.hero-cta{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;}
+section{padding:44px 0;}
+.sec-tag{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
+h2{font-size:26px;line-height:1.3;color:var(--ink);margin:8px 0 10px;}
+.sec-sub{color:#57534e;max-width:620px;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px;}
+.card{background:var(--light);border:1px solid #bae6fd;border-radius:16px;padding:22px;}
+.card .ic{width:48px;height:48px;border-radius:14px;background:var(--sky);display:flex;align-items:center;justify-content:center;font-size:24px;}
+.card h3{color:var(--ink);font-size:18px;margin:12px 0 6px;}
+.card p{color:#57534e;font-size:14px;}
+.stats{background:#fff;border-top:1px solid #bae6fd;border-bottom:1px solid #bae6fd;}
+.stats-in{max-width:1000px;margin:auto;padding:28px 20px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.stat{text-align:center;border:1px solid #bae6fd;border-radius:14px;padding:16px;background:var(--light);}
+.stat b{display:block;font-size:26px;color:var(--accent);}
+.stat span{font-size:14px;color:#57534e;}
+.split{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;}
+.split img{border-radius:20px;height:300px;object-fit:cover;}
+.check{list-style:none;margin-top:16px;}
+.check li{padding:9px 0 9px 34px;position:relative;color:#44403c;}
+.check li:before{content:"✓";position:absolute;left:0;top:9px;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;line-height:24px;font-weight:800;font-size:13px;}
+.testi{background:var(--light);border:1px solid #bae6fd;border-radius:16px;padding:26px;margin-top:16px;}
+.testi p{font-size:17px;color:var(--ink);}
+.testi footer{margin-top:12px;color:var(--accent);font-weight:700;font-size:14px;}
+.cta-band{background:linear-gradient(120deg,var(--accent),#0369a1);border-radius:22px;padding:38px 26px;text-align:center;color:#fff;}
+.cta-band h2{color:#fff;}
+.cta-band p{color:#e0f2fe;}
+.cta-band .btn{background:#fff;color:var(--ink);margin-top:16px;box-shadow:none;}
+.contact{background:var(--light);padding:36px 20px;text-align:center;}
+footer{background:var(--dark);color:#d6d3d1;text-align:center;padding:20px;font-size:14px;}
+@media(min-width:700px){.nav-links{display:flex;}.hero h1{font-size:44px;}.stats-in{grid-template-columns:repeat(4,1fr);}.split{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+<div class="topbar">🦷 সুন্দর হাসি, সুস্থ দাঁত — আজই সিরিয়াল নিন</div>
+<nav><div class="nav-in"><div class="logo">যোগী<span>.</span></div><div class="nav-links"><a href="#services">সেবা</a><a href="#why">কেন আমরা</a><a href="#contact">যোগাযোগ</a></div><a class="btn" href="#contact" style="padding:9px 18px;">অ্যাপয়েন্টমেন্ট</a></div></nav>
+<header class="hero">
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&q=80&auto=format&fit=crop" alt="ডেন্টাল ক্লিনিক">
+<div class="hero-ov"><div class="hero-txt">
+<span class="pill">🦷 চিকিৎসা</span>
+<h1>যোগী<br><em>হাসিটা থাকুক সবসময় সুন্দর।</em></h1>
+<p>🏥 প্রফেশনাল হেলথ ওয়েবসাইট ডিজাইন আইডিয়া
+
+নিচে একটি সম্পূর্ণ, প্রফেশনাল স্বাস্থ্য ওয়েবসাইটের ডিজাইন ব্লুপ্রিন্ট দিচ্ছি — যা ট্রাস্ট, ক্লিনিটি এবং ইউজার-ফ্রেন্ডলিনেস三者কে平衡 করে।
+
+---
+
+🎨 ১. ডিজাইন ফিলোসফি ও কালার স্কিম
+
+মূল থিম: "Calm, Clean & Trustworthy" — শান্ত, পরিষ্কার ও বিশ্বাসযোগ্য
+
+এলিমেন্ট কালার ব্যবহার
+Primary #0A6EBD (মেডিকেল ব্লু) হেডার, CTA বাটন
+Secondary #00A99D (টিল/মিন্ট) হাইলাইট, আইকন
+Accent #FF6B6B (সফট করাল) ইমার্জেন্সি, অ্যালার্ট
+Background #F8FAFC (অফ-হোয়াইট) বডি
+Text #1E293</p>
+<div class="hero-cta"><a class="btn" href="#contact">অ্যাপয়েন্টমেন্ট নিন →</a><a class="btn ghost" href="#services">সেবা দেখুন</a></div>
+</div></div>
+</header>
+<main class="wrap">
+<section id="services">
+<span class="sec-tag">ডেন্টাল সেবা</span>
+<h2>দাঁতের যাবতীয় চিকিৎসা এক জায়গায়</h2>
+<p class="sec-sub">আধুনিক যন্ত্রপাতি আর অভিজ্ঞ ডেন্টিস্ট — ব্যথাহীন, নিরাপদ ও যত্নশীল চিকিৎসা।</p>
+<div class="cards">
+<article class="card"><div class="ic">🦷</div><h3>আমাদের পণ্য</h3><p>প্রফেশনাল নিয়ে বিস্তারিত তথ্য এখানে পাবেন।</p></article>
+<article class="card"><div class="ic">✨</div><h3>গ্যালারি</h3><p>হেলথ নিয়ে বিস্তারিত তথ্য এখানে পাবেন।</p></article>
+<article class="card"><div class="ic">😁</div><h3>যোগাযোগ</h3><p>ওয়েবসাইট নিয়ে বিস্তারিত তথ্য এখানে পাবেন।</p></article>
+<article class="card"><div class="ic">👶</div><h3>গ্রাহকদের মতামত</h3><p>আপনার প্রয়োজন মতো আরও সেবা এখানে পাবেন।</p></article>
+</div>
+</section>
+</main>
+<div class="stats"><div class="stats-in">
+<div class="stat"><b>১০০০০+</b><span>রোগী দেখা হয়েছে</span></div>
+<div class="stat"><b>১০+</b><span>বিশেষজ্ঞ ডাক্তার</span></div>
+<div class="stat"><b>১৫+</b><span>বছরের অভিজ্ঞতা</span></div>
+<div class="stat"><b>৪.৯</b><span>গড় রেটিং</span></div>
+</div></div>
+<main class="wrap">
+<section id="why">
+<div class="split">
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900&q=80&auto=format&fit=crop" alt="দাঁতের চিকিৎসা">
+<div>
+<span class="sec-tag">কেন আমরা</span>
+<h2>ব্যথাহীন চিকিৎসা, সাশ্রয়ী খরচ</h2>
+<ul class="check">
+<li>অভিজ্ঞ ডাক্তার</li>
+<li>সহজ অ্যাপয়েন্টমেন্ট</li>
+<li>সাশ্রয়ী ফি</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<span class="sec-tag">রোগীদের কথা</span>
+<h2>যাঁরা চিকিৎসা নিয়েছেন</h2>
+<div class="testi"><p>“সেবাটা খুব ভালো লেগেছে, আবার আসব।”</p><footer>— একজন গ্রাহক</footer></div>
+<div class="testi"><p>“সহজ ও পরিষ্কার — ঠিক যা দরকার ছিল।”</p><footer>— একজন গ্রাহক</footer></div>
+</section>
+<section>
+<div class="cta-band">
+<h2>আজই অ্যাপয়েন্টমেন্ট নিন</h2>
+<p>দাঁতের ব্যথা আর অপেক্ষা নয় — এখনই সিরিয়াল নিন।</p>
+<a class="btn" href="#contact">অ্যাপয়েন্টমেন্ট নিন →</a>
+</div>
+</section>
+</main>
+<section class="contact" id="contact">
+<h2>অ্যাপয়েন্টমেন্ট ও যোগাযোগ</h2>
+<p>এই পেজ থেকে যোগাযোগ করুন।</p>
+</section>
+<footer>🏥 প্রফেশনাল হেলথ ওয়েবসাইট ডিজাইন আইডিয়া — GoQw দিয়ে তৈরি।</footer>
+</body>
+</html>
